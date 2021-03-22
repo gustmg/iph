@@ -1,0 +1,22 @@
+$card-elevation: 0;
+$card-border-radius: 4px;
+$btn-font-weight: 700;
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-y: auto;
+    background-color: var(--v-primary-lighten2);
+}
+
+.v-application {
+    background-color: transparent !important;
+}
+
+.neu-card {
+    background: linear-gradient(45deg, var(--v-primary-base), var(--v-primary-lighten1));
+    // background: linear-gradient(145deg, rgba(20, 20, 20, 1) 44%, rgba(58, 39, 25, 1) 100%, rgba(121, 71, 33, 1) 100%, rgba(246, 134, 50, 1) 100%);
+}

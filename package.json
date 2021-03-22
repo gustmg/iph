@@ -1,0 +1,48 @@
+{
+    "name": "iph",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve --port 3000",
+        "build": "vue-cli-service build"
+    },
+    "dependencies": {
+        "@mapbox/mapbox-gl-draw": "^1.2.2",
+        "@mapbox/mapbox-gl-geocoder": "^4.7.0",
+        "animejs": "^3.2.1",
+        "apexcharts": "^3.25.0",
+        "axios": "^0.21.1",
+        "core-js": "^3.6.5",
+        "jquery": "^3.5.1",
+        "lodash": "^4.17.21",
+        "mapbox-gl": "^2.1.1",
+        "moment": "^2.29.1",
+        "sha1": "^1.1.1",
+        "v-mapbox": "^1.7.0",
+        "vis-data": "^7.1.2",
+        "vis-network": "^9.0.2",
+        "vis-util": "^5.0.2",
+        "vue": "^2.6.11",
+        "vue-apexcharts": "^1.6.0",
+        "vue-device-detector": "^1.1.6",
+        "vue-kinesis": "^1.2.3",
+        "vue-mapbox": "^0.4.1",
+        "vue-mapbox-geocoder": "^0.2.0",
+        "vue-particles": "^1.0.9",
+        "vue-router": "^3.2.0",
+        "vue-vis-network": "^1.0.2",
+        "vuetify": "^2.4.4",
+        "vuetify-loader": "^1.7.2",
+        "vuex": "^3.4.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "sass": "^1.26.5",
+        "sass-loader": "^8.0.2",
+        "vue-cli-plugin-vuetify": "^2.1.0",
+        "vue-template-compiler": "^2.6.11"
+    }
+}
