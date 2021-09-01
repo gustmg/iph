@@ -3,7 +3,7 @@
         :accessToken="accessToken"
         :mapStyle="mapStyle"
         :center="center"
-        :zoom="16"
+        :zoom="14"
         :bearing="-17.6"
         :pitch="45"
         :antialias="true"
@@ -23,7 +23,7 @@
 
         <v-card class="neu-card card" width="320" elevation="8">
             <v-card-title class="justify-center">
-                <div class="text-h6 font-weight-bold white--text">Lista de encuestas</div>
+                <div class="text-h6 font-weight-bold white--text">Lista de IPH's</div>
             </v-card-title>
             <v-card-text>
                 <v-text-field label="Buscar" solo dense v-model="search"></v-text-field>
@@ -199,7 +199,7 @@
         data() {
             return {
                 accessToken: 'pk.eyJ1IjoiZ3VzdG1nIiwiYSI6ImNramtlb2liazRwbDgzM255ajJleWd2cWUifQ.IXSXU4vuLx_zyN5c8lcvYg',
-                mapStyle: 'mapbox://styles/gustmg/cklhme6sw0ang17mk5se5tpdz',
+                mapStyle: 'mapbox://styles/gustmg/ckml1v2c00y4117rtjeu0k3o2',
 
                 unidades: [
                     {

@@ -176,41 +176,41 @@ export default new Vuex.Store({
 
     actions: {
         login: async function({ commit }, user) {
-            // await axios
-            //     .post('http://eonproduccion.net:31000/v2017001/API/PoliciaCuadrantes/login', user)
-            //     .then(res => {
-            //         if (res.data.data[0].token.length > 0) {
-            //             var token = res.data.data[0].token
-            //             var perfil = res.data.data[0].extraInfo.perfil
-            //             var nombre = res.data.data[0].fullName
-            //             var idPersonal = res.data.data[0].fk_idPersonal
-            //             localStorage.setItem('token', token)
-            //             localStorage.setItem('perfil', perfil)
-            //             localStorage.setItem('nombre', nombre)
-            //             localStorage.setItem('idPersonal', idPersonal)
-            //             commit('SET_TOKEN', token)
-            //             commit('SET_PERFIL', perfil)
-            //             commit('SET_NOMBRE', nombre)
-            //             commit('SET_ID_PERSONAL', idPersonal)
-            //             commit('SET_SNACKBAR_MESSAGE', 'Inicio de sesión realizado. Redirigiendo al launcher.')
-            //         } else {
-            //             commit('SET_SNACKBAR_MESSAGE', 'No pudo realizarse el inicio de sesión. Por favor, verifique sus credenciales.')
-            //         }
-            //     })
-            //     .catch(error => commit('SET_SNACKBAR_MESSAGE', 'No pudo realizarse el inicio de sesión. Por favor, verifique sus credenciales.'))
-            var token = '123456789'
-            var perfil = 'Administrador'
-            var nombre = 'Administrador'
-            var idPersonal = '1'
-            localStorage.setItem('token', token)
-            localStorage.setItem('perfil', perfil)
-            localStorage.setItem('nombre', nombre)
-            localStorage.setItem('idPersonal', idPersonal)
-            commit('SET_TOKEN', token)
-            commit('SET_PERFIL', perfil)
-            commit('SET_NOMBRE', nombre)
-            commit('SET_ID_PERSONAL', idPersonal)
-            commit('SET_SNACKBAR_MESSAGE', 'Inicio de sesión realizado. Redirigiendo al launcher.')
+            await axios
+                .post('http://eonproduccion.net:31000/v2017001/API/PoliciaCuadrantes/login', user)
+                .then(res => {
+                    if (res.data.data[0].token.length > 0) {
+                        var token = res.data.data[0].token
+                        var perfil = res.data.data[0].extraInfo.perfil
+                        var nombre = res.data.data[0].fullName
+                        var idPersonal = res.data.data[0].fk_idPersonal
+                        localStorage.setItem('token', token)
+                        localStorage.setItem('perfil', perfil)
+                        localStorage.setItem('nombre', nombre)
+                        localStorage.setItem('idPersonal', idPersonal)
+                        commit('SET_TOKEN', token)
+                        commit('SET_PERFIL', perfil)
+                        commit('SET_NOMBRE', nombre)
+                        commit('SET_ID_PERSONAL', idPersonal)
+                        commit('SET_SNACKBAR_MESSAGE', 'Inicio de sesión realizado. Redirigiendo al launcher.')
+                    } else {
+                        commit('SET_SNACKBAR_MESSAGE', 'No pudo realizarse el inicio de sesión. Por favor, verifique sus credenciales.')
+                    }
+                })
+                .catch(error => commit('SET_SNACKBAR_MESSAGE', 'No pudo realizarse el inicio de sesión. Por favor, verifique sus credenciales.'))
+            // var token = '123456789'
+            // var perfil = 'Administrador'
+            // var nombre = 'Administrador'
+            // var idPersonal = '1'
+            // localStorage.setItem('token', token)
+            // localStorage.setItem('perfil', perfil)
+            // localStorage.setItem('nombre', nombre)
+            // localStorage.setItem('idPersonal', idPersonal)
+            // commit('SET_TOKEN', token)
+            // commit('SET_PERFIL', perfil)
+            // commit('SET_NOMBRE', nombre)
+            // commit('SET_ID_PERSONAL', idPersonal)
+            // commit('SET_SNACKBAR_MESSAGE', 'Inicio de sesión realizado. Redirigiendo al launcher.')
         },
 
         fetchConsultaByDetenido: async function({ commit }, consulta) {

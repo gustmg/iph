@@ -3,9 +3,9 @@
         <v-container class="primary lighten-2">
             <v-row>
                 <v-col cols="6">
-                    <v-card color="primary lighten-1" class="rounded-lg neu-card" elevation="12">
+                    <v-card color="primary lighten-1" class="rounded-lg neu-card" elevation="12" height="100%">
                         <v-card-title class="justify-center">
-                            <div class="text-h6 font-weight-bold white--text">Estatus por colonia</div>
+                            <div class="text-h6 font-weight-bold white--text">Estatus de elementos por colonia</div>
                         </v-card-title>
                         <v-card-text align="center">
                             <v-container>
@@ -42,7 +42,7 @@
                         <v-col cols="12">
                             <v-card color="primary lighten-1" class="rounded-lg neu-card">
                                 <v-card-title>
-                                    <div class="text-h6 font-weight-bold white--text">Lista de personal (5 en total)</div>
+                                    <div class="text-h6 font-weight-bold white--text">Lista de IPH's (5 en total)</div>
                                 </v-card-title>
                                 <v-card-text>
                                     <v-data-table
@@ -59,8 +59,8 @@
                         </v-col>
                         <v-col cols="12">
                             <v-card color="primary lighten-1" class="rounded-lg neu-card" elevation="12">
-                                <v-card-title class="justify-center">
-                                    <div class="text-h6 font-weight-bold white--text">Necesidades</div>
+                                <v-card-title>
+                                    <div class="text-h6 font-weight-bold white--text">Detenciones</div>
                                 </v-card-title>
                                 <v-card-text align="center">
                                     <v-container>
@@ -72,84 +72,18 @@
                                                 <v-row>
                                                     <v-col cols="12" align="left">
                                                         <v-card class="glass">
-                                                            <!-- <v-card-title class="justify-center">
+                                                            <v-card-title class="justify-center">
                                                                 <v-icon color="accent" size="60">mdi-pistol</v-icon>
                                                                 <div class="text-subtitle-2 font-weight-black white--text">46 Armas aseguradas</div>
-                                                            </v-card-title> -->
-                                                            <v-list color="transparent" dark>
-                                                                <v-list-item three-line dense>
-                                                                    <v-list-item-avatar>
-                                                                        <v-icon>mdi-medical-bag</v-icon>
-                                                                    </v-list-item-avatar>
-                                                                    <v-list-item-content>
-                                                                        <v-list-item-title>Programas de salud</v-list-item-title>
-                                                                        <v-list-item-subtitle>
-                                                                            <div class="text-caption">
-                                                                                Hombres: 450
-                                                                            </div>
-                                                                        </v-list-item-subtitle>
-                                                                        <v-list-item-subtitle>
-                                                                            <div class="text-caption">
-                                                                                Mujeres: 364
-                                                                            </div>
-                                                                        </v-list-item-subtitle>
-                                                                    </v-list-item-content>
-                                                                </v-list-item>
-                                                                <v-list-item three-line dense>
-                                                                    <v-list-item-avatar>
-                                                                        <v-icon>mdi-shield-account</v-icon>
-                                                                    </v-list-item-avatar>
-                                                                    <v-list-item-content>
-                                                                        <v-list-item-title>Seguridad</v-list-item-title>
-                                                                        <v-list-item-subtitle>
-                                                                            <div class="text-caption">
-                                                                                Hombres: 160
-                                                                            </div>
-                                                                        </v-list-item-subtitle>
-                                                                        <v-list-item-subtitle>
-                                                                            <div class="text-caption">
-                                                                                Mujeres: 381
-                                                                            </div>
-                                                                        </v-list-item-subtitle>
-                                                                    </v-list-item-content>
-                                                                </v-list-item>
-                                                                <v-list-item three-line dense>
-                                                                    <v-list-item-avatar>
-                                                                        <v-icon>mdi-pencil</v-icon>
-                                                                    </v-list-item-avatar>
-                                                                    <v-list-item-content>
-                                                                        <v-list-item-title>Programas educativos</v-list-item-title>
-                                                                        <v-list-item-subtitle>
-                                                                            <div class="text-caption">
-                                                                                Hombres: 246
-                                                                            </div>
-                                                                        </v-list-item-subtitle>
-                                                                        <v-list-item-subtitle>
-                                                                            <div class="text-caption">
-                                                                                Mujeres: 228
-                                                                            </div>
-                                                                        </v-list-item-subtitle>
-                                                                    </v-list-item-content>
-                                                                </v-list-item>
-                                                                <v-list-item three-line dense>
-                                                                    <v-list-item-avatar>
-                                                                        <v-icon>mdi-road-variant</v-icon>
-                                                                    </v-list-item-avatar>
-                                                                    <v-list-item-content>
-                                                                        <v-list-item-title>Mejoras de infraestructura</v-list-item-title>
-                                                                        <v-list-item-subtitle>
-                                                                            <div class="text-caption">
-                                                                                Hombres: 691
-                                                                            </div>
-                                                                        </v-list-item-subtitle>
-                                                                        <v-list-item-subtitle>
-                                                                            <div class="text-caption">
-                                                                                Mujeres: 340
-                                                                            </div>
-                                                                        </v-list-item-subtitle>
-                                                                    </v-list-item-content>
-                                                                </v-list-item>
-                                                            </v-list>
+                                                            </v-card-title>
+                                                        </v-card>
+                                                    </v-col>
+                                                    <v-col cols="12" align="left">
+                                                        <v-card class="glass">
+                                                            <v-card-title class="justify-center">
+                                                                <v-icon color="accent" size="60">mdi-car</v-icon>
+                                                                <div class="text-subtitle-2 font-weight-black white--text">12 Vehículos asegurados</div>
+                                                            </v-card-title>
                                                         </v-card>
                                                     </v-col>
                                                 </v-row>
@@ -191,7 +125,7 @@
         async mounted() {
             await this.fetchEstadisticas({
                 fechaInicio: '2021-01-01',
-                fechaFin: '2021-02-01',
+                fechaFin: '2021-04-01',
             })
         },
 
